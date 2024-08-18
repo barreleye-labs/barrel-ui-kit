@@ -1,5 +1,5 @@
 import { Logo } from './styles';
-import { LogoProps } from '@src/components';
+import { LogoProps } from './types';
 
 const BarreleyeLogo = ({onClick}: LogoProps) => {
   return (
