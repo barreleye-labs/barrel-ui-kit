@@ -1,2 +1,1 @@
-export { default as BreadCrumb } from './BreadCrumb';
-export * from './types.ts';
+export interface Breadcrumb {}
