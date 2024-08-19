@@ -1,4 +1,4 @@
-import { ElementType } from 'react';
+import { ElementType, ReactNode } from 'react';
 
 export type RouteContent = { title: string; path: string; icon: ElementType };
 
@@ -7,7 +7,10 @@ export interface Route {
   content: RouteContent[];
 }
 
-export type MenuProps = Route[]
+export interface MenuProps {
+  items: Route[];
+  children?: ReactNode;
+}
 
 export interface MenuItemProps {
   content: RouteContent[];

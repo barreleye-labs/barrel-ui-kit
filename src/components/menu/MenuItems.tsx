@@ -20,7 +20,7 @@ const MenuItems = memo(({ content, onClick }: MenuItemProps) => {
         <Link to={item.path} key={index} onClick={onClick}>
           <ListItem>
             <ListItemButton className="menu-item" selected={getSelected(item.path)} variant="plain">
-              <ListItemDecorator>{item.icon && <item.icon />}</ListItemDecorator>
+              { item.icon && <ListItemDecorator><item.icon /></ListItemDecorator> }
               <ListItemContent>{item.title}</ListItemContent>
             </ListItemButton>
           </ListItem>
