@@ -1,7 +1,7 @@
 {
   "name": "barrel-ui-kit",
   "description": "Barreleye UI Kit",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "private": false,
   "files": [
     "dist"
