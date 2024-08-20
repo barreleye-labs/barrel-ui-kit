@@ -2,7 +2,7 @@ import type {ColorPaletteProp, VariantProp} from "@mui/joy";
 import {ReactNode} from "react";
 
 export type ButtonProps = {
-    text: string;
+    text?: string;
     variant?: VariantProp;
     size?: 'sm' | 'md' | 'lg';
     color?: ColorPaletteProp;

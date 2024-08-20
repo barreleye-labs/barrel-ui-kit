@@ -1,16 +1,16 @@
-import { Logo } from './styles';
+import { LogoContainer } from './styles';
 import { LogoProps } from './types';
 
-const BarreleyeLogo = ({onClick}: LogoProps) => {
+const TextLogo = ({bold, semi, onClick}: LogoProps) => {
   return (
-    <Logo onClick={onClick}>
+    <LogoContainer onClick={onClick}>
       <span className="bold">
-        Barreleye
+        {bold}
       </span>
       &nbsp;
-      <span>scan</span>
-    </Logo>
+      <span>{semi}</span>
+    </LogoContainer>
   );
 };
 
-export default BarreleyeLogo;
+export default TextLogo;

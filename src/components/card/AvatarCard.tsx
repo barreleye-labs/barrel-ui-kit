@@ -2,9 +2,7 @@ import { useState } from 'react';
 import { ContentCopy as ContentCopyIcon ,ExpandMore as ExpandMoreIcon,GitHub as  GitHubIcon, LinkedIn as LinkedInIcon, Send as SendIcon} from '@mui/icons-material';
 import { Avatar, Card, Chip, Stack, Typography } from '@mui/joy';
 import IconButtonJoy from '@mui/joy/IconButton';
-import Divider from '@mui/material/Divider';
-import IconButton from '@mui/material/IconButton';
-import Tooltip from '@mui/material/Tooltip';
+import { Divider, IconButton, Tooltip } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { Char } from '@utils';
 import { CardContainer, CardContent } from './styles';
@@ -21,7 +19,7 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
   })
 }));
 
-export default function AvatarCard({ src, address, config, balance, nonce, title }: AvatarCardProps) {
+export default function AvatarCard({ src, address, config, balance, nonce, title, ...props }: AvatarCardProps) {
   const [open, setOpen] = useState(false);
   const handleOpen = () => {
     setOpen(!open);
@@ -34,6 +32,7 @@ export default function AvatarCard({ src, address, config, balance, nonce, title
   return (
     <CardContainer>
       <Card
+        {...props}
         className={open ? 'active' : ''}
         sx={(theme) => ({
           width: 320,

@@ -8,37 +8,18 @@ import { InputProps } from '@components/input/types.ts';
 
 const Input = memo(
   ({
-    name,
-    error,
-    width = '80%',
-    type,
-    defaultValue,
-    value,
-    disabled,
-    label,
-    helperText,
-    fullWidth,
-    onChange,
-    onBlur,
-    placeholder
+     error,
+     helperText,
+     width = '80%',
+    ...props
   }: InputProps) => {
     return (
       <Container>
         <FormControl sx={{ m: 1, width }} variant="standard">
           <TextField
-            error={error}
             id="fullWidth"
             margin="normal"
-            name={name}
-            type={type}
-            fullWidth={fullWidth}
-            label={label}
-            placeholder={placeholder}
-            disabled={disabled}
-            defaultValue={defaultValue}
-            value={value}
-            onChange={onChange}
-            onBlur={onBlur}
+            {...props}
           />
           <FormHelperText className={error ? 'error' : 'info'}>{helperText}</FormHelperText>
         </FormControl>

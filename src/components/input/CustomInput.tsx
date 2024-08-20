@@ -14,7 +14,7 @@ const COPY_TEXT = {
 };
 
 const CustomInput = memo(
-  ({ width = '50%', defaultValue, label, isCopyBtn, disabled, placeholder, onChange }: CustomInputProps) => {
+  ({ width = '50%', defaultValue, label, isCopyBtn, disabled, placeholder, onChange, ...props }: CustomInputProps) => {
     const [showPassword, setShowPassword] = useState(false);
     const [copyButtonText, setCopyButtonText] = useState(COPY_TEXT.DEFAULT);
     const handleClickShowPassword = () => setShowPassword((show) => !show);
@@ -37,12 +37,10 @@ const CustomInput = memo(
         <FormControl sx={{ m: 1, width }} variant="standard">
           <InputLabel htmlFor="standard-adornment-password">{label}</InputLabel>
           <Input
-            disabled={disabled}
-            value={defaultValue}
+            {...props}
             id="standard-adornment-password"
             type={showPassword ? 'text' : 'password'}
-            onChange={(e) => onChange && onChange(e)}
-            placeholder={placeholder}
+            onChange={onChange}
             endAdornment={
               <InputAdornment position="end">
                 <IconButton

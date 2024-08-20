@@ -21,7 +21,7 @@ const SearchInput = memo(({ onChange }: SearchInputProps) => {
           '--Input-radius': `${16}px`,
           '--Input-decoratorChildHeight': `${29}px`
         }}
-        onChange={(e) => onChange && onChange(e)}
+        onChange={onChange}
       />
     </Container>
   );

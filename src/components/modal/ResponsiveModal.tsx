@@ -5,9 +5,9 @@ import ModalDialog from '@mui/joy/ModalDialog';
 import Typography from '@mui/joy/Typography';
 import { ResponsiveModalProps } from '@components/modal/types';
 
-const ResponsiveModal = ({ open, title, sub, onClose, onConfirm }: ResponsiveModalProps) => {
+const ResponsiveModal = ({ open, title, sub, onClose, onConfirm, ...props }: ResponsiveModalProps) => {
   return (
-      <Modal open={open} onClose={onClose}>
+      <Modal open={open} onClose={onClose} {...props}>
         <ModalDialog
           aria-labelledby="nested-modal-title"
           aria-describedby="nested-modal-description"

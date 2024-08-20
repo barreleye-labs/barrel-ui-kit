@@ -11,16 +11,13 @@ import IconButton from '@mui/material/IconButton';
 import { Container } from './styles';
 import { DetailProps } from '@components/detail/types';
 
-const Detail = (props: DetailProps) => {
-  const { icon, title, subheader, isAction, onClickPrev, onClickAfter } = props;
-
+const Detail = ({ icon, isAction, onClickPrev, onClickAfter , children, ...props }: DetailProps) => {
   return (
     <Container>
       <Card>
         <CardHeader
+          {...props}
           avatar={icon}
-          title={title}
-          subheader={subheader}
           action={
             isAction && (
               <>
@@ -35,7 +32,7 @@ const Detail = (props: DetailProps) => {
           }
         />
         <Divider variant="middle" flexItem />
-        <CardContent>{props.children}</CardContent>
+        <CardContent>{children}</CardContent>
       </Card>
     </Container>
   );
