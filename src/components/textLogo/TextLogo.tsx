@@ -1,7 +1,7 @@
 import { LogoContainer } from './styles';
 import { LogoProps } from './types';
 
-const TextLogo = ({bold, semi, onClick}: LogoProps) => {
+export const TextLogo = ({bold, semi, onClick}: LogoProps) => {
   return (
     <LogoContainer onClick={onClick}>
       <span className="bold">
@@ -13,4 +13,3 @@ const TextLogo = ({bold, semi, onClick}: LogoProps) => {
   );
 };
 
-export default TextLogo;

@@ -3,7 +3,7 @@ export * from './card';
 export * from './detail';
 export * from './form';
 export * from './input';
-export * from './logo';
+export * from './textLogo';
 export * from './modal';
 export * from './ripple';
 export * from './row';
