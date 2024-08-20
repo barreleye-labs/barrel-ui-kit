@@ -38,6 +38,7 @@ const CustomInput = memo(
           <InputLabel htmlFor="standard-adornment-password">{label}</InputLabel>
           <Input
             {...props}
+            value={defaultValue}
             id="standard-adornment-password"
             type={showPassword ? 'text' : 'password'}
             onChange={onChange}
