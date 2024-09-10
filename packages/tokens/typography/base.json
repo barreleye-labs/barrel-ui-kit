@@ -1,0 +1,70 @@
+{
+  "typography": {
+    "h1": {
+      "fontSize": "2.5rem",
+      "fontWeight": 700,
+      "lineHeight": 1.2,
+      "fontFamily": "'Roboto', sans-serif"
+    },
+    "h2": {
+      "fontSize": "2rem",
+      "fontWeight": 600,
+      "lineHeight": 1.3,
+      "fontFamily": "'Roboto', sans-serif"
+    },
+    "h3": {
+      "fontSize": "1.75rem",
+      "fontWeight": 600,
+      "lineHeight": 1.3,
+      "fontFamily": "'Roboto', sans-serif"
+    },
+    "h4": {
+      "fontSize": "1.5rem",
+      "fontWeight": 600,
+      "lineHeight": 1.3,
+      "fontFamily": "'Roboto', sans-serif"
+    },
+    "title-lg": {
+      "fontSize": "1.25rem",
+      "fontWeight": 500,
+      "lineHeight": 1.4,
+      "fontFamily": "'Roboto', sans-serif"
+    },
+    "title-md": {
+      "fontSize": "1.125rem",
+      "fontWeight": 500,
+      "lineHeight": 1.4,
+      "fontFamily": "'Roboto', sans-serif"
+    },
+    "title-sm": {
+      "fontSize": "1rem",
+      "fontWeight": 500,
+      "lineHeight": 1.4,
+      "fontFamily": "'Roboto', sans-serif"
+    },
+    "body-lg": {
+      "fontSize": "1rem",
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "fontFamily": "'Roboto', sans-serif"
+    },
+    "body-md": {
+      "fontSize": "0.875rem",
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "fontFamily": "'Roboto', sans-serif"
+    },
+    "body-sm": {
+      "fontSize": "0.75rem",
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "fontFamily": "'Roboto', sans-serif"
+    },
+    "body-xs": {
+      "fontSize": "0.625rem",
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "fontFamily": "'Roboto', sans-serif"
+    }
+  }
+}

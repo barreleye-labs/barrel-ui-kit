@@ -1,16 +1,19 @@
 {
   "compilerOptions": {
+    "target": "es5",
     "esModuleInterop": true,
-    "composite": true,
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
     "types": [],
-    "skipLibCheck": true,
     "module": "ESNext",
-    "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
+    "skipLibCheck": true,
+    "rootDir": "./src",
+    "baseUrl": "..",
+
     /* Bundler mode */
     "moduleResolution": "node",
     "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
 
@@ -20,16 +23,20 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    "rootDir": "src",
-    "typeRoots": ["node_modules/@types", "@types", "node_modules"],
+    "typeRoots": ["node_modules/@types", "@types",
+      "../node_modules"
+    ],
     "noEmit": true,
     "noEmitOnError": true,
 
+    "allowSyntheticDefaultImports": true,
+
     "paths": {
-      "@*": ["src/*"],
+      "@src/*": ["src/*"],
       "@hooks/*": ["src/hooks/*"],
+      "@tokens/*": ["src/tokens/*"],
       "@services/*": ["src/services/*"],
-      "@components/*": ["src/components/*"],
+      "@components/*": ["components/*"],
       "@layouts": ["src/layouts/index.tsx"],
       "@layouts/*": ["src/layouts/*"],
       "@pages/*": ["src/pages/*"],
@@ -40,7 +47,14 @@
       "@router/*": ["src/router/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
-  "exclude": ["node_modules"],
-  "outDir": "dist"
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+  ],
+
+  "exclude": [
+    "../node_modules"
+  ],
+
+  "declaration": true
 }

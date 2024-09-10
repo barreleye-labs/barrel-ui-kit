@@ -1,0 +1,114 @@
+{
+  "components": {
+    "JoyAccordion": {
+      "padding": {
+        "default": "{spacing.medium}",
+        "expanded": "{spacing.large}"
+      },
+      "color": {
+        "background": "{color.background.accordion}",
+        "text": "{color.text.primary}"
+      },
+      "border": {
+        "color": "{color.border.default}",
+        "radius": "{radius.medium}"
+      }
+    },
+    "JoyAccordionGroup": {
+      "padding": {
+        "default": "{spacing.small}"
+      },
+      "color": {
+        "background": "{color.background.accordionGroup}",
+        "text": "{color.text.primary}"
+      },
+      "border": {
+        "color": "{color.border.light}",
+        "radius": "{radius.small}"
+      }
+    },
+    "JoyAccordionSummary": {
+      "padding": {
+        "default": "{spacing.small}",
+        "expanded": "{spacing.medium}"
+      },
+      "color": {
+        "background": "{color.background.accordionSummary}",
+        "text": "{color.text.primary}"
+      },
+      "icon": {
+        "color": "{color.icon.default}"
+      }
+    },
+    "JoyAccordionDetails": {
+      "padding": {
+        "default": "{spacing.medium}"
+      },
+      "color": {
+        "background": "{color.background.accordionDetails}",
+        "text": "{color.text.secondary}"
+      }
+    },
+
+    "JoyCard": {
+      "padding": {
+        "default": "{spacing.large}"
+      },
+      "color": {
+        "background": "{color.background.card}",
+        "text": "{color.text.primary}"
+      },
+      "border": {
+        "color": "{color.border.card}",
+        "radius": "{radius.medium}"
+      }
+    },
+    "JoyTypography": {
+      "font": {
+        "family": "{font.family.default}",
+        "weight": {
+          "regular": "{font.weight.regular}",
+          "bold": "{font.weight.bold}"
+        },
+        "size": {
+          "small": "{font.size.small}",
+          "medium": "{font.size.medium}",
+          "large": "{font.size.large}"
+        }
+      },
+      "color": {
+        "text": {
+          "primary": "{color.text.primary}",
+          "secondary": "{color.text.secondary}"
+        }
+      }
+    },
+    "JoyModal": {
+      "padding": {
+        "default": "{spacing.large}"
+      },
+      "color": {
+        "background": "{color.background.modal}",
+        "text": "{color.text.primary}"
+      },
+      "border": {
+        "radius": "{radius.large}"
+      },
+      "overlay": {
+        "color": "{color.overlay}"
+      }
+    },
+    "JoyTooltip": {
+      "padding": {
+        "default": "{spacing.xsmall}"
+      },
+      "color": {
+        "background": "{color.background.tooltip}",
+        "text": "{color.text.tooltip}"
+      },
+      "border": {
+        "radius": "{radius.small}"
+      }
+    }
+  }
+}

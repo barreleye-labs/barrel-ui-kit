@@ -5,7 +5,6 @@ const Container = styled(Badge)(({ theme }) => ({
   '& .MuiBadge-badge': {
     backgroundColor: '#b1e1dd',
     color: '#b1e1dd',
-    boxShadow: `0 0 0 2px ${theme.palette.background.paper}`,
     '&::after': {
       position: 'absolute',
       top: 0,

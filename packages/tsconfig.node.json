@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "rootDir": "./src",
+    "typeRoots": ["node_modules/@types", "@types",
+      "../node_modules"
+    ],
+    "noEmit": true,
+    "noEmitOnError": true,
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/*.ts"
+  ],
+  "exclude": [
+    "../node_modules"
+  ],
+  "outDir": "dist"
+}

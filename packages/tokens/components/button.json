@@ -1,0 +1,58 @@
+{
+  "JoyButton": {
+    "color": {
+      "soft": {
+        "background": {
+          "primary": "var(--barrel-palette-primary-50)",
+          "hover": "var(--barrel-palette-focusVisible-default)",
+          "disabled":"var(--barrel-palette-disabled-default)"
+        },
+        "text": {
+          "primary": "var(--barrel-palette-primary-500)",
+          "disabled": "var(--barrel-palette-common-white)"
+        },
+        "border": {
+          "primary": "{color.border.button}",
+          "hover": "{color.border.buttonHover}"
+        }
+      },
+      "outlined": {
+        "background": {
+          "neutral": "transparent",
+          "hover": "var(--barrel-palette-blue-100)",
+          "disabled":"var(--barrel-palette-disabled-default)"
+        },
+        "text": {
+          "primary": "var(--barrel-palette-primary-500)",
+          "neutral": "var(--barrel-palette-gray-900)",
+          "disabled": "var(--barrel-palette-gray-100)",
+          "hover": "var(--barrel-palette-primary-500)"
+        },
+        "border": {
+          "primary": "var(--barrel-palette-primary-100)",
+          "neutral": "var(--barrel-palette-gray-100)",
+          "hover": "var(--barrel-palette-primary-500)",
+          "disabled":"var(--barrel-palette-disabled-default)"
+        }
+      },
+      "plain": {
+        "background": {
+          "hover": "var(--barrel-palette-focusVisible-default)"
+        },
+        "text": {
+          "hover": "var(--barrel-palette-primary-500)"
+        }
+      }
+    },
+
+    "border": {
+      "slight": "var(--barrel-radius-sm)",
+      "rounded": "var(--barrel-radius-xl)"
+    },
+
+    "padding": {
+      "default": "var(--barrel-spacing-5)",
+      "large": "var(--barrel-spacing-5)"
+    }
+  }
+}
